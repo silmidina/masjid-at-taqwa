@@ -16,7 +16,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/fontawesome-free/css/all.min.css">
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css">
+
+  <style>
+    .logo-brand {
+      opacity: 1;
+      width: 7rem;
+      margin: 0 10px 0 10px;
+      margin-bottom: 10px;
+    }
+
+    .brand-link {
+      text-align: center;
+    }
+
+    .divider-line {
+      width: 100%;
+      height: 1px;
+      background-color: green;
+      border: none;
+      margin-top: 5px;
+    }
+  </style>
 </head>
+
+
 
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
@@ -59,19 +82,15 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- Main Sidebar Container -->
     <aside class="main-sidebar sidebar-light-green elevation-4">
       <!-- Brand Logo -->
-      <a href="<?= base_url('Admin') ?>" class="brand-link d-flex flex-column justify-content-center align-items-center text-center">
-        <img src="assets/logo1.png" alt="AdminLTE Logo" class="brand-image elevation-3"
-          style="width: 50px; height: 50px; margin-bottom: 15px;">
-        <h4><b class="text-success">AT-TAQWA</b></h4>
+      <a href="<?= base_url('admin') ?>" class="brand-link d-flex flex-column justify-content-center align-items-center" style="border: none;">
+        <img src="<?= base_url('assets/logo1.png') ?>" class="logo-brand elevation-5">
+
       </a>
 
 
       <!-- Sidebar -->
       <div class="sidebar">
-
-
-
-
+        <hr class="divider-line">
         <!-- Sidebar Menu -->
         <nav class="mt-2">
           <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu" data-accordion="false">
