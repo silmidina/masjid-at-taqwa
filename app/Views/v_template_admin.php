@@ -112,6 +112,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <p>Waktu Shalat</p>
               </a>
             </li>
+            <hr class="divider-line">
             <li class="nav-item menu-open">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-money-bill-wave"></i>
@@ -178,6 +179,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </p>
               </a>
             </li>
+            <hr class="divider-line">
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-users"></i>
@@ -195,6 +197,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <!-- Control Sidebar -->
+            <hr class="divider-line">
             <li class="nav-item">
               <a class="nav-link" href="<?= base_url('Login/LogOut') ?>">
                 <i class="nav-icon fas fa-sign-out-alt"></i> Logout
