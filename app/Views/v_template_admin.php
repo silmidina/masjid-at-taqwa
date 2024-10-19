@@ -8,7 +8,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>MASJID AT-TAQWA | <?= $judul ?></title>
+  <title>MASJID AT-TAQWA | <?= $menu ?></title>
 
   <!-- Google Font: Source Sans Pro -->
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,400i,700&display=fallback">
@@ -291,6 +291,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
         "autoWidth": false,
       });
     });
+  </script>
+
+  <script>
+    window.setTimeout(function() {
+      $(".alert").fadeTo(500, 0).slideUp(500, function() {
+        $(this).remove();
+      });
+    }, 3000)
   </script>
 </body>
 
