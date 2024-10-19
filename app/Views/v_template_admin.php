@@ -144,8 +144,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <hr class="divider-line">
-            <li class="nav-item <?= $menu == 'uang-kas' ? 'menu-open' : '' ?>">
-              <a href="#" class="nav-link <?= $menu == 'uang-kas' ? 'active' : '' ?>">
+            <li class="nav-item <?= $menu == 'kas-masjid' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $menu == 'kas-masjid' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-money-bill-wave"></i>
                 <p>
                   Uang Kas Masjid
@@ -154,7 +154,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link <?= $menu == 'kas-masuk' ? 'active' : '' ?>">
+                  <a href="#" class="nav-link <?= $submenu == 'kas-masuk' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-download nav-icon text-success"></i>
                     <p>Kas Masuk</p>
                   </a>
@@ -166,7 +166,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?= base_url('KasMasjid') ?>" class="nav-link <?= $submenu == 'rekap-kas' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-alt nav-icon text-primary"></i>
                     <p>Rekap Kas</p>
                   </a>
@@ -199,6 +199,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   <a href="#" class="nav-link">
                     <i class="nav-icon fas fa-file-alt nav-icon text-primary"></i>
                     <p>Rekap Kas</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
+
+            <li class="nav-item <?= $menu == 'uang-kas' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $menu == 'uang-kas' ? 'active' : '' ?>">
+                <i class="nav-icon fas fa-file-invoice-dollar"></i>
+                <p>
+                  Laporan Kas
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="#" class="nav-link <?= $menu == 'kas-masuk' ? 'active' : '' ?>">
+                    <i class="nav-icon fas fa-file-alt nav-icon text-warning"></i>
+                    <p>Laporan Kas Masjid</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon fas fa-file-alt nav-icon text-warning"></i>
+                    <p>Laporan Kas Sosial</p>
                   </a>
                 </li>
               </ul>

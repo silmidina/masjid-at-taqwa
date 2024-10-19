@@ -96,6 +96,8 @@ class Filters extends BaseFilters
                     'Admin/*',
                     'Agenda',
                     'Agenda/*',
+                    'KasMasjid',
+                    'KasMasjid/*',
                 ]
             ],
             // 'honeypot',

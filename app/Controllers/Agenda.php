@@ -21,7 +21,7 @@ class Agenda extends BaseController
             'judul' => '<i class="nav-icon fas fa-calendar-alt"></i> Agenda',
             'subjudul' => '',
             'menu' => 'agenda',
-            'sub-menu' => '',
+            'submenu' => '',
             'page' => 'v_agenda',
             'agenda' => $this->ModelAgenda->AllData(),
         ];
