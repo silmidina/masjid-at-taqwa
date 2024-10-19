@@ -40,13 +40,20 @@ scratch. This page gets rid of all links and provides the needed markup only.
           <!-- Left navbar links -->
           <ul class="navbar-nav">
             <li class="nav-item">
-              <a href="index3.html" class="nav-link">Home</a>
+              <a href="<?= base_url('Home') ?>" class="nav-link">Home</a>
+            </li>
+            <li class="nav-item">
+              <a href="<?= base_url('Home/Agenda') ?>" class="nav-link">Agenda</a>
             </li>
             <li class="nav-item">
               <a href="index3.html" class="nav-link">About</a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">Kas</a>
+            <li class="nav-item dropdown">
+              <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Kas</a>
+              <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
+                <li><a href="#" class="dropdown-item">Kas Masjid </a></li>
+                <li><a href="#" class="dropdown-item">Kas Sosial</a></li>
+              </ul>
             </li>
             <li class="nav-item">
               <a href="#" class="nav-link">Peserta Qurban</a>

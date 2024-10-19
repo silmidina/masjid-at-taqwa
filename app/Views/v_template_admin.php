@@ -17,6 +17,11 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- Theme style -->
   <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/dist/css/adminlte.min.css">
 
+  <!-- DataTables -->
+  <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/datatables-bs4/css/dataTables.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/datatables-responsive/css/responsive.bootstrap4.min.css">
+  <link rel="stylesheet" href="<?= base_url('AdminLTE') ?>/plugins/datatables-buttons/css/buttons.bootstrap4.min.css">
+
   <style>
     .logo-brand {
       opacity: 1;
@@ -104,7 +109,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">
+              <a href="<?= base_url('Agenda') ?>" class="nav-link <?= $menu == 'agenda' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-calendar-alt"></i>
                 <p>Agenda</p>
               </a>
@@ -116,8 +121,8 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
             </li>
             <hr class="divider-line">
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
+            <li class="nav-item <?= $menu == 'uang-kas' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $menu == 'uang-kas' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-money-bill-wave"></i>
                 <p>
                   Uang Kas Masjid
@@ -126,7 +131,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#" class="nav-link <?= $menu == 'kas-masuk' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-download nav-icon text-success"></i>
                     <p>Kas Masuk</p>
                   </a>
@@ -145,8 +150,9 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </li>
               </ul>
             </li>
-            <li class="nav-item menu-open">
-              <a href="#" class="nav-link">
+
+            <li class="nav-item <?= $menu == 'uang-kas' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $menu == 'uang-kas' ? 'active' : '' ?>">
                 <i class="nav-icon fas fa-hand-holding-heart"></i>
                 <p>
                   Uang Kas Sosial
@@ -155,7 +161,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="#" class="nav-link <?= $menu == 'kas-masuk' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-download nav-icon text-success"></i>
                     <p>Kas Masuk</p>
                   </a>
@@ -174,6 +180,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </li>
               </ul>
             </li>
+
             <li class="nav-item">
               <a href="#" class="nav-link">
                 <i class="nav-icon fas fa-hand-holding-usd"></i>
@@ -261,13 +268,30 @@ scratch. This page gets rid of all links and provides the needed markup only.
   <!-- ./wrapper -->
 
   <!-- REQUIRED SCRIPTS -->
-
   <!-- jQuery -->
-  <script src="<?= base_url('AdminLTE') ?>/plugins/jquery/jquery.min.js"></script>
+  <script src="<?= base_url('AdminLTE/plugins/jquery/jquery.min.js') ?>"></script>
   <!-- Bootstrap 4 -->
-  <script src="<?= base_url('AdminLTE') ?>/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="<?= base_url('AdminLTE/plugins/bootstrap/js/bootstrap.bundle.min.js') ?>"></script>
   <!-- AdminLTE App -->
-  <script src="<?= base_url('AdminLTE') ?>/dist/js/adminlte.min.js"></script>
+  <script src="<?= base_url('AdminLTE/dist/js/adminlte.min.js') ?>"></script>
+  <!-- DataTables  & Plugins -->
+  <script src="<?= base_url('AdminLTE') ?>/plugins/datatables/jquery.dataTables.min.js"></script>
+  <script src="<?= base_url('AdminLTE') ?>/plugins/datatables-bs4/js/dataTables.bootstrap4.min.js"></script>
+  <script src="<?= base_url('AdminLTE') ?>/plugins/datatables-responsive/js/dataTables.responsive.min.js"></script>
+  <script src="<?= base_url('AdminLTE') ?>/plugins/datatables-responsive/js/responsive.bootstrap4.min.js"></script>
+  <script src="<?= base_url('AdminLTE') ?>/plugins/datatables-buttons/js/dataTables.buttons.min.js"></script>
+  <script src="<?= base_url('AdminLTE') ?>/plugins/datatables-buttons/js/buttons.bootstrap4.min.js"></script>
+
+  <script>
+    $(function() {
+      $("#example1").DataTable({
+        "paging": true,
+        "responsive": true,
+        "lengthChange": true,
+        "autoWidth": false,
+      });
+    });
+  </script>
 </body>
 
 </html>
