@@ -72,3 +72,139 @@ INFO - 2024-10-19 02:31:40 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-10-19 02:33:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-19 02:33:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-19 02:36:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-19 02:43:56 --> mysqli_sql_exception: Table 'at-taqwa.tbl_agenda' doesn't exist in C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *\nFROM `...', 0)
+#1 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *\nFROM `...')
+#2 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *\nFROM `...')
+#3 C:\xampp\htdocs\At-Taqwa\system\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *\nFROM `...', Array, false)
+#4 C:\xampp\htdocs\At-Taqwa\app\Models\ModelHome.php(15): CodeIgniter\Database\BaseBuilder->get()
+#5 C:\xampp\htdocs\At-Taqwa\app\Controllers\Home.php(30): App\Models\ModelHome->Agenda()
+#6 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(933): App\Controllers\Home->Agenda()
+#7 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+#8 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\At-Taqwa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\At-Taqwa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\At-Taqwa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-19 02:43:56 --> CodeIgniter\Database\Exceptions\DatabaseException: Table 'at-taqwa.tbl_agenda' doesn't exist
+[Method: GET, Route: Home/Agenda]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = :month(tanggal):
+AND year(tanggal) = :year(tanggal):
+ORDER BY `tanggal` ASC', [...], false)
+ 2 APPPATH\Models\ModelHome.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 3 APPPATH\Controllers\Home.php(30): App\Models\ModelHome->Agenda()
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Agenda()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-19 02:43:56 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Table 'at-taqwa.tbl_agenda' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = \'10\'
+AND year(tanggal) = \'2024\'
+ORDER BY `tanggal` ASC')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = \'10\'
+AND year(tanggal) = \'2024\'
+ORDER BY `tanggal` ASC')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = :month(tanggal):
+AND year(tanggal) = :year(tanggal):
+ORDER BY `tanggal` ASC', [...], false)
+ 4 APPPATH\Models\ModelHome.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 5 APPPATH\Controllers\Home.php(30): App\Models\ModelHome->Agenda()
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Agenda()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-19 02:43:56 --> [Caused by] mysqli_sql_exception: Table 'at-taqwa.tbl_agenda' doesn't exist
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = \'10\'
+AND year(tanggal) = \'2024\'
+ORDER BY `tanggal` ASC', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = \'10\'
+AND year(tanggal) = \'2024\'
+ORDER BY `tanggal` ASC')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = \'10\'
+AND year(tanggal) = \'2024\'
+ORDER BY `tanggal` ASC')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(1644): CodeIgniter\Database\BaseConnection->query('SELECT *
+FROM `tbl_agenda`
+WHERE month(tanggal) = :month(tanggal):
+AND year(tanggal) = :year(tanggal):
+ORDER BY `tanggal` ASC', [...], false)
+ 5 APPPATH\Models\ModelHome.php(15): CodeIgniter\Database\BaseBuilder->get()
+ 6 APPPATH\Controllers\Home.php(30): App\Models\ModelHome->Agenda()
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Agenda()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-19 02:44:14 --> CodeIgniter\View\Exceptions\ViewException: Invalid file: "front-end/v_agenda.php"
+[Method: GET, Route: Home/Agenda]
+in SYSTEMPATH\Exceptions\FrameworkException.php on line 41.
+ 1 SYSTEMPATH\View\View.php(222): CodeIgniter\Exceptions\FrameworkException::forInvalidFile('front-end/v_agenda.php')
+ 2 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('front-end/v_agenda', [], true)
+ 3 APPPATH\Views\v_template.php(129): view('front-end/v_agenda')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 7 APPPATH\Controllers\Home.php(32): view('v_template', [...])
+ 8 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Agenda()
+ 9 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+10 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+11 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+12 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+13 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-19 02:45:19 --> ErrorException: Undefined variable $menu
+[Method: GET, Route: Home/Agenda]
+in APPPATH\Views\front-end\v_agenda.php on line 5.
+ 1 APPPATH\Views\front-end\v_agenda.php(5): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $menu', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\front-end\\v_agenda.php', 5)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\front-end\\v_agenda.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('front-end/v_agenda', [], true)
+ 5 APPPATH\Views\v_template.php(129): view('front-end/v_agenda')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template', [], true)
+ 9 APPPATH\Controllers\Home.php(32): view('v_template', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\Home->Agenda()
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\Home))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-19 02:45:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-19 02:46:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-19 02:46:54 --> CodeIgniter\HTTP\Exceptions\BadRequestException: The URI you submitted has disallowed characters: "logo1.png alt="
+[Method: GET, Route: assets/logo1.png%20alt=]
+in SYSTEMPATH\Router\Router.php on line 737.
+ 1 SYSTEMPATH\Router\Router.php(204): CodeIgniter\Router\Router->checkDisallowedChars('assets/logo1.png alt=')
+ 2 SYSTEMPATH\CodeIgniter.php(834): CodeIgniter\Router\Router->handle('assets/logo1.png alt=')
+ 3 SYSTEMPATH\CodeIgniter.php(457): CodeIgniter\CodeIgniter->tryToRouteIt(Object(CodeIgniter\Router\RouteCollection))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-19 02:47:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-19 02:47:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-19 02:58:48 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-19 02:58:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

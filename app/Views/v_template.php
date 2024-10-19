@@ -25,7 +25,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <nav class="main-header navbar navbar-expand-md navbar-light navbar-white">
       <div class="container">
         <a href="<?= base_url() ?>" class="navbar-brand">
-          <img src="assets/logo1.png" alt="AdminLTE Logo" class="brand-image elevation-3" style="opacity: .8; width: 70px; height: auto;">
+          <img src="<?= base_url('assets/logo1.png') ?>" class="brand-image elevation-3" style="opacity: .8; width: 70px; height: auto;">
           <b> MASJID AT-TAQWA</b>
         </a>
 
