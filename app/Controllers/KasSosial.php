@@ -22,7 +22,7 @@ class KasSosial extends BaseController
             'menu' => 'kas-sosial',
             'submenu' => 'rekap-kas',
             'page' => 'kas-sosial/v_rekap_kas_sosial',
-            'kassosial' => $this->ModelKasSosial->AllData(),
+            'kas_s' => $this->ModelKasSosial->AllData(),
         ];
         return view('v_template_admin', $data);
     }
@@ -34,7 +34,7 @@ class KasSosial extends BaseController
             'menu' => 'kas-sosial',
             'submenu' => 'kas-masuk',
             'page' => 'kas-sosial/v_kas_sosial_masuk',
-            'kassosial' => $this->ModelKasSosial->AllDataKasMasuk(),
+            'kas_s' => $this->ModelKasSosial->AllDataKasMasuk(),
         ];
         return view('v_template_admin', $data);
     }
@@ -46,7 +46,7 @@ class KasSosial extends BaseController
             'menu' => 'kas-sosial',
             'submenu' => 'kas-keluar',
             'page' => 'kas-sosial/v_kas_sosial_keluar',
-            'kassosial' => $this->ModelKasSosial->AllDataKasKeluar(),
+            'kas_s' => $this->ModelKasSosial->AllDataKasKeluar(),
         ];
         return view('v_template_admin', $data);
     }

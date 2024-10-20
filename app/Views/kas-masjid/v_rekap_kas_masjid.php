@@ -1,22 +1,22 @@
 <div class="col-md-12">
   <?php
-  if ($kas == null) {
-    $pemasukan[] = 0;
-    $pengeluaran[] = 0;
+  if ($kas_m == null) {
+    $pemasukan_m[] = 0;
+    $pengeluaran_m[] = 0;
   } else {
-    foreach ($kas as $key => $value) {
-      $pemasukan[] = $value['kas_masuk'];
-      $pengeluaran[] = $value['kas_keluar'];
+    foreach ($kas_m as $key => $value) {
+      $pemasukan_m[] = $value['kas_masuk'];
+      $pengeluaran_m[] = $value['kas_keluar'];
     }
   }
-  $saldokasmasjid = array_sum($pemasukan) - array_sum($pengeluaran);
+  $saldokasmasjid = array_sum($pemasukan_m) - array_sum($pengeluaran_m);
   ?>
   <div class="alert alert-primary alert-dismissible">
     <h5><i class="nav-icon fas fa-money-bill-wave"></i> Saldo Kas Masjid</h5>
-    Pemasukan : Rp. <?= number_format(array_sum($pemasukan), 0) ?>
-    <br>Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran), 0) ?>
+    Pemasukan : Rp. <?= number_format(array_sum($pemasukan_m), 0) ?>,-
+    <br>Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran_m), 0) ?>,-
     <hr>
-    <h4>Saldo Akhir : Rp. <?= number_format($saldokasmasjid, 0) ?></h4>
+    <h4>Saldo Akhir : Rp. <?= number_format($saldokasmasjid, 0) ?>,-</h4>
   </div>
 </div>
 
@@ -44,13 +44,13 @@
         </thead>
         <tbody>
           <?php $no = 1;
-          foreach ($kas as $key => $value) { ?>
+          foreach ($kas_m as $key => $value) { ?>
             <tr class="<?= $value['status'] == 'Masuk' ? 'text-success' : 'text-danger' ?>">
               <td><?= $no++ ?></td>
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
-              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?></td>
-              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?>,-</td>
+              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?>,-</td>
             </tr>
           <?php } ?>
         </tbody>

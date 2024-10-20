@@ -27,8 +27,8 @@ class Admin extends BaseController
             'menu' => 'dashboard',
             'submenu' => '',
             'page' => 'v_dashboard',
-            'kas' => $this->ModelKasMasjid->AllData(),
-            'kassosial' => $this->ModelKasSosial->AllData(),
+            'kas_m' => $this->ModelKasMasjid->AllData(),
+            'kas_s' => $this->ModelKasSosial->AllData(),
         ];
         return view('v_template_admin', $data);
     }

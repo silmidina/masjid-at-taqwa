@@ -1,16 +1,16 @@
 <div class="col-md-12">
   <?php
-  if ($kas == null) {
-    $pengeluaran[] = 0;
+  if ($kas_m == null) {
+    $pengeluaran_m[] = 0;
   } else {
-    foreach ($kas as $key => $value) {
-      $pengeluaran[] = $value['kas_keluar'];
+    foreach ($kas_m as $key => $value) {
+      $pengeluaran_m[] = $value['kas_keluar'];
     }
   }
   ?>
   <div class="alert alert-danger alert-dismissible">
     <h5><i class="nav-icon fas fa-money-bill-wave"></i> Total Pengeluaran Kas Masjid</h5>
-    <h4>Rp. <?= number_format(array_sum($pengeluaran), 0) ?></h4>
+    <h4>Rp. <?= number_format(array_sum($pengeluaran_m), 0) ?>,-</h4>
   </div>
 </div>
 
@@ -43,12 +43,12 @@
         </thead>
         <tbody>
           <?php $no = 1;
-          foreach ($kas as $key => $value) { ?>
+          foreach ($kas_m as $key => $value) { ?>
             <tr>
               <td><?= $no++ ?></td>
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
-              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?>,-</td>
               <td class="text-center">
                 <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_masjid'] ?>"><i class="fas fa-pencil-alt"></i></button>
                 <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_masjid'] ?>"><i class="fas fa-trash"></i></button>
@@ -98,7 +98,7 @@
 </div>
 <!-- /.modal tambah -->
 
-<?php foreach ($kas as $key => $value) { ?>
+<?php foreach ($kas_m as $key => $value) { ?>
   <!-- .modal edit -->
   <div class="modal fade" id="modal-edit<?= $value['id_kas_masjid'] ?>">
     <div class="modal-dialog">

@@ -139,17 +139,39 @@
 </div>
 
 <!-- Info boxes -->
+<?php
+if ($kas_m == null) {
+  $pemasukan_m[] = 0;
+  $pengeluaran_m[] = 0;
+} else {
+  foreach ($kas_m as $key => $value) {
+    $pemasukan_m[] = $value['kas_masuk'];
+    $pengeluaran_m[] = $value['kas_keluar'];
+  }
+}
+$saldokasmasjid = array_sum($pemasukan_m) - array_sum($pengeluaran_m);
+
+if ($kas_s == null) {
+  $pemasukan_s[] = 0;
+  $pengeluaran_s[] = 0;
+} else {
+  foreach ($kas_s as $key => $value) {
+    $pemasukan_s[] = $value['kas_masuk'];
+    $pengeluaran_s[] = $value['kas_keluar'];
+  }
+}
+$saldokassosial = array_sum($pemasukan_s) - array_sum($pengeluaran_s);
+?>
 <div class="col-lg-12">
   <div class="row">
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="info-box">
         <span class="info-box-icon bg-primary elevation-1"><i class="fas fa-money-bill-wave"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Sisa Kas</span>
+          <span class="info-box-text">Saldo Kas Masjid</span>
           <span class="info-box-number">
-            10
-            <small>%</small>
+            Rp. <?= number_format($saldokasmasjid, 0) ?>,-
           </span>
         </div>
         <!-- /.info-box-content -->
@@ -157,13 +179,13 @@
       <!-- /.info-box -->
     </div>
     <!-- /.col -->
-    <div class="col-md-4">
+    <div class="col-md-6">
       <div class="info-box mb-3">
-        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-file-download"></i></span>
+        <span class="info-box-icon bg-success elevation-1"><i class="fas fa-hand-holding-heart"></i></span>
 
         <div class="info-box-content">
-          <span class="info-box-text">Kas Masuk</span>
-          <span class="info-box-number">41,410</span>
+          <span class="info-box-text">Saldo Kas Sosial</span>
+          <span class="info-box-number">Rp. <?= number_format($saldokassosial, 0) ?>,-</span>
         </div>
         <!-- /.info-box-content -->
       </div>
@@ -171,20 +193,6 @@
     </div>
     <!-- /.col -->
 
-
-
-    <div class="col-md-4">
-      <div class="info-box mb-3">
-        <span class="info-box-icon bg-danger elevation-1"><i class="fas fa-file-upload"></i></span>
-
-        <div class="info-box-content">
-          <span class="info-box-text">Kas Keluar</span>
-          <span class="info-box-number">760</span>
-        </div>
-        <!-- /.info-box-content -->
-      </div>
-      <!-- /.info-box -->
-    </div>
 
     <!-- /.col -->
   </div>

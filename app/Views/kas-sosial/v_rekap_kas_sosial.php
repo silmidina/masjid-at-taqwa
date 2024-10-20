@@ -1,10 +1,10 @@
 <div class="col-md-12">
   <?php
-  if ($kassosial == null) {
+  if ($kas_s == null) {
     $pemasukan_s[] = 0;
     $pengeluaran_s[] = 0;
   } else {
-    foreach ($kassosial as $key => $value) {
+    foreach ($kas_s as $key => $value) {
       $pemasukan_s[] = $value['kas_masuk'];
       $pengeluaran_s[] = $value['kas_keluar'];
     }
@@ -13,10 +13,10 @@
   ?>
   <div class="alert alert-primary alert-dismissible">
     <h5><i class="nav-icon fas fa-money-bill-wave"></i> Saldo Kas Sosial</h5>
-    Pemasukan : Rp. <?= number_format(array_sum($pemasukan_s), 0) ?>
-    <br>Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran_s), 0) ?>
+    Pemasukan : Rp. <?= number_format(array_sum($pemasukan_s), 0) ?>,-
+    <br>Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran_s), 0) ?>,-
     <hr>
-    <h4>Saldo Akhir : Rp. <?= number_format($saldokassosial, 0) ?></h4>
+    <h4>Saldo Akhir : Rp. <?= number_format($saldokassosial, 0) ?>,-</h4>
   </div>
 </div>
 
@@ -44,13 +44,13 @@
         </thead>
         <tbody>
           <?php $no = 1;
-          foreach ($kassosial as $key => $value) { ?>
+          foreach ($kas_s as $key => $value) { ?>
             <tr class="<?= $value['status'] == 'Masuk' ? 'text-success' : 'text-danger' ?>">
               <td><?= $no++ ?></td>
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
-              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?></td>
-              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?>,-</td>
+              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?>,-</td>
             </tr>
           <?php } ?>
         </tbody>
