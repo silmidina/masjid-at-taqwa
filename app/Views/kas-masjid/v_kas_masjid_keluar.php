@@ -52,7 +52,7 @@
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
               <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
-              <td>
+              <td class="text-center">
                 <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_masjid'] ?>"><i class="fas fa-pencil-alt"></i></button>
                 <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_masjid'] ?>"><i class="fas fa-trash"></i></button>
               </td>
@@ -70,7 +70,7 @@
   <div class="modal-dialog">
     <div class="modal-content bg-danger">
       <div class="modal-header">
-        <h4 class="modal-title">Kas Keluar</h4>
+        <h4 class="modal-title"> Tambah Kas Keluar</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
@@ -101,3 +101,45 @@
   <!-- /.modal-dialog -->
 </div>
 <!-- /.modal tambah -->
+
+<?php foreach ($kas as $key => $value) { ?>
+  <!-- .modal edit -->
+  <div class="modal fade" id="modal-edit<?= $value['id_kas_masjid'] ?>">
+    <div class="modal-dialog">
+      <div class="modal-content bg-danger">
+        <div class="modal-header">
+          <h4 class="modal-title">Edit Kas Keluar</h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <?php echo form_open('KasMasjid/UpdateKasKeluar/' . $value['id_kas_masjid']) ?>
+          <div class="form-group">
+            <label for="">Tanggal</label>
+            <input type="date" name="tanggal" value="<?= $value['tanggal'] ?>" class="form-control">
+          </div>
+          <div class="form-group">
+            <label for="">Keterangan</label>
+            <input name="ket" class="form-control" value="<?= $value['ket'] ?>">
+          </div>
+          <div class="form-group">
+            <label for="">Jumlah(Rp.)</label>
+            <input type="number" min="0" name="kas_keluar" value="<?= $value['kas_keluar'] ?>" class="form-control">
+          </div>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+          <button type="submit" class="btn btn-outline-light">Simpan</button>
+          <?php echo form_close() ?>
+        </div>
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal edit -->
+
+
+
+<?php } ?>
