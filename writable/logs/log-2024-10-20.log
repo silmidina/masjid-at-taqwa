@@ -114,3 +114,163 @@ INFO - 2024-10-20 15:25:12 --> Session: Class initialized using 'CodeIgniter\Ses
 INFO - 2024-10-20 15:25:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-20 15:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
 INFO - 2024-10-20 15:25:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:17:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:20:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:20:58 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:23:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:23:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:23:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:26:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:32:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:33:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:33:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:34:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:34:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:34:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:34:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:35:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:36:08 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:36:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:39:44 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:39:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:39:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:40:23 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-20 16:40:23 --> mysqli_sql_exception: Column 'kas_keluar' cannot be null in C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ka...', 0)
+#1 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 C:\xampp\htdocs\At-Taqwa\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 C:\xampp\htdocs\At-Taqwa\app\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\At-Taqwa\app\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk(Array)
+#6 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+#7 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+#8 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\At-Taqwa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\At-Taqwa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\At-Taqwa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-20 16:40:23 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'kas_keluar' cannot be null
+[Method: POST, Route: KasMasjid/InsertKasKeluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :status:)', [...], false)
+ 2 APPPATH\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 16:40:23 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'kas_keluar' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :status:)', [...], false)
+ 4 APPPATH\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 16:40:23 --> [Caused by] mysqli_sql_exception: Column 'kas_keluar' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :status:)', [...], false)
+ 5 APPPATH\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-20 16:41:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-20 16:41:26 --> mysqli_sql_exception: Column 'kas_keluar' cannot be null in C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `ka...', 0)
+#1 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `ka...')
+#2 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `ka...')
+#3 C:\xampp\htdocs\At-Taqwa\system\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `ka...', Array, false)
+#4 C:\xampp\htdocs\At-Taqwa\app\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert(Array)
+#5 C:\xampp\htdocs\At-Taqwa\app\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk(Array)
+#6 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+#7 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+#8 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\At-Taqwa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\At-Taqwa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\At-Taqwa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-20 16:41:26 --> CodeIgniter\Database\Exceptions\DatabaseException: Column 'kas_keluar' cannot be null
+[Method: POST, Route: KasMasjid/InsertKasKeluar]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :status:)', [...], false)
+ 2 APPPATH\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 3 APPPATH\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 16:41:26 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Column 'kas_keluar' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :status:)', [...], false)
+ 4 APPPATH\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 5 APPPATH\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-20 16:41:26 --> [Caused by] mysqli_sql_exception: Column 'kas_keluar' cannot be null
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (\'2024-10-20\', \'bayar listrik\', NULL, 0, \'Keluar\')')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2340): CodeIgniter\Database\BaseConnection->query('INSERT INTO `kas_masjid` (`tanggal`, `ket`, `kas_keluar`, `kas_masuk`, `status`) VALUES (:tanggal:, :ket:, :kas_keluar:, :kas_masuk:, :status:)', [...], false)
+ 5 APPPATH\Models\ModelKasMasjid.php(31): CodeIgniter\Database\BaseBuilder->insert([...])
+ 6 APPPATH\Controllers\KasMasjid.php(77): App\Models\ModelKasMasjid->InsertKasMasuk([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\KasMasjid->InsertKasKeluar()
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\KasMasjid))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-20 16:41:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:41:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:41:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:41:32 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:41:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:41:54 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:41:55 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:42:45 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:42:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:42:47 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:03 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:12 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:14 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:43:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:55:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-20 16:55:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.

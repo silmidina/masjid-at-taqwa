@@ -50,4 +50,32 @@ class KasMasjid extends BaseController
         ];
         return view('v_template_admin', $data);
     }
+
+    public function InsertKasMasuk()
+    {
+        $data = [
+            'tanggal' => $this->request->getPost('tanggal'),
+            'ket' => $this->request->getPost('ket'),
+            'kas_masuk' => $this->request->getPost('kas_masuk'),
+            'kas_keluar' => 0,
+            'status' => 'Masuk',
+        ];
+        $this->ModelKasMasjid->InsertKasMasuk($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Ditambahkan!! ');
+        return redirect()->to(base_url('KasMasjid/KasMasuk'));
+    }
+
+    public function InsertKasKeluar()
+    {
+        $data = [
+            'tanggal' => $this->request->getPost('tanggal'),
+            'ket' => $this->request->getPost('ket'),
+            'kas_keluar' => $this->request->getPost('kas_keluar'),
+            'kas_masuk' => 0,
+            'status' => 'Keluar',
+        ];
+        $this->ModelKasMasjid->InsertKasMasuk($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Ditambahkan!! ');
+        return redirect()->to(base_url('KasMasjid/KasKeluar'));
+    }
 }

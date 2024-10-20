@@ -35,7 +35,7 @@ class Agenda extends BaseController
             'jam' => $this->request->getPost('jam'),
         ];
         $this->ModelAgenda->InsertData($data);
-        session()->setFlashdata('pesan', '<i class="fas fa-check"></i>Data Berhasil Ditambahkan!! ');
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Ditambahkan!! ');
         return redirect()->to(base_url('Agenda'));
     }
 
@@ -58,7 +58,7 @@ class Agenda extends BaseController
             'id_agenda' => $id_agenda,
         ];
         $this->ModelAgenda->DeleteData($data);
-        session()->setFlashdata('pesan', '<i class="fas fa-check"></i>Data Berhasil Didelete!! ');
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Didelete!! ');
         return redirect()->to(base_url('Agenda'));
     }
 }

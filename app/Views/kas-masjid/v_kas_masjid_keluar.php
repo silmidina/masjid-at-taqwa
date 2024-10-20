@@ -28,6 +28,11 @@
     </div>
     <!-- /.card-header -->
     <div class="card-body">
+      <?php if (session()->getFlashdata('pesan')) : ?>
+        <div class="alert alert-info" role="alert">
+          <?= session()->getFlashdata('pesan') ?>
+        </div>
+      <?php endif; ?>
       <table class="table" id="example1">
         <thead>
           <tr class="text-center">
@@ -47,7 +52,10 @@
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
               <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
-
+              <td>
+                <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_masjid'] ?>"><i class="fas fa-pencil-alt"></i></button>
+                <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_masjid'] ?>"><i class="fas fa-trash"></i></button>
+              </td>
 
             </tr>
           <?php } ?>
@@ -56,3 +64,40 @@
     </div>
   </div>
 </div>
+
+<!-- .modal tambah -->
+<div class="modal fade" id="modal-tambah">
+  <div class="modal-dialog">
+    <div class="modal-content bg-danger">
+      <div class="modal-header">
+        <h4 class="modal-title">Kas Keluar</h4>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+        <?php echo form_open('KasMasjid/InsertKasKeluar') ?>
+        <div class="form-group">
+          <label for="">Tanggal</label>
+          <input type="date" name="tanggal" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="">Keterangan</label>
+          <input name="ket" class="form-control" required>
+        </div>
+        <div class="form-group">
+          <label for="">Jumlah(Rp.)</label>
+          <input type="number" min="0" value="0" name="kas_keluar" class="form-control" required>
+        </div>
+      </div>
+      <div class="modal-footer justify-content-between">
+        <button type="button" class="btn btn-outline-light" data-dismiss="modal">Close</button>
+        <button type="submit" class="btn btn-outline-light">Simpan</button>
+        <?php echo form_close() ?>
+      </div>
+    </div>
+    <!-- /.modal-content -->
+  </div>
+  <!-- /.modal-dialog -->
+</div>
+<!-- /.modal tambah -->

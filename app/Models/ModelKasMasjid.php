@@ -26,10 +26,15 @@ class ModelKasMasjid extends Model
             ->get()->getResultArray();
     }
 
-    //public function InsertData($data)
-    //{
-    //$this->db->table('agenda')->insert($data);
-    // }
+    public function InsertKasMasuk($data)
+    {
+        $this->db->table('kas_masjid')->insert($data);
+    }
+
+    public function InsertKasKeluar($data)
+    {
+        $this->db->table('kas_masjid')->insert($data);
+    }
 
     //public function UpdateData($data)
     //{
