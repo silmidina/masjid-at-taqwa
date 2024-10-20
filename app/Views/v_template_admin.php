@@ -69,14 +69,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
       font-weight: bold;
     }
   </style>
-
 </head>
-
-
 
 <body class="hold-transition sidebar-mini">
   <div class="wrapper">
-
     <!-- Navbar -->
     <nav class="main-header navbar navbar-expand navbar-white navbar-light">
       <!-- Left navbar links -->
@@ -111,7 +107,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     <!-- /.navbar -->
 
     <!-- Main Sidebar Container -->
-    <aside class="main-sidebar sidebar-light-green elevation-4">
+    <aside class="main-sidebar sidebar-light-info elevation-4">
       <!-- Brand Logo -->
       <a href="<?= base_url('admin') ?>" class="brand-link d-flex flex-column justify-content-center align-items-center" style="border: none;">
         <img src="<?= base_url('assets/logo1.png') ?>" class="logo-brand elevation-5">
@@ -154,13 +150,13 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="#" class="nav-link <?= $submenu == 'kas-masuk' ? 'active' : '' ?>">
+                  <a href="<?= base_url('KasMasjid/KasMasuk') ?>" class="nav-link <?= $submenu == 'kas-masuk' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-download nav-icon text-success"></i>
                     <p>Kas Masuk</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?= base_url('KasMasjid/KasKeluar') ?>" class="nav-link <?= $submenu == 'kas-keluar' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-upload nav-icon text-danger"></i>
                     <p>Kas Keluar</p>
                   </a>
@@ -326,13 +322,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
     });
   </script>
 
-  <script>
-    window.setTimeout(function() {
-      $(".alert").fadeTo(500, 0).slideUp(500, function() {
-        $(this).remove();
-      });
-    }, 3000)
-  </script>
+
 </body>
 
 </html>

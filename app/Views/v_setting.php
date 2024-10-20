@@ -1,5 +1,5 @@
  <div class="col-md-12">
-   <div class="card card-success">
+   <div class="card card-info">
      <div class="card-header">
        <h3 class="card-title"><?= $menu ?></h3>
        <div class="card-tools">
@@ -38,7 +38,7 @@
          <input name="alamat" value="<?= $setting['alamat'] ?>" class="form-control">
        </div>
 
-       <button class="btn btn-info">Simpan</button>
+       <button class="btn btn-secondary">Simpan</button>
        <?php echo form_close() ?>
      </div>
    </div>

@@ -19,7 +19,6 @@ class Agenda extends BaseController
     {
         $data = [
             'judul' => '<i class="nav-icon fas fa-calendar-alt"></i> Agenda',
-            'subjudul' => '',
             'menu' => 'agenda',
             'submenu' => '',
             'page' => 'v_agenda',

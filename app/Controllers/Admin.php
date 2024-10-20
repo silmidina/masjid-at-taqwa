@@ -14,6 +14,16 @@ class Admin extends BaseController
         $this->ModelAdmin = new ModelAdmin();
     }
 
+    public function index()
+    {
+        $data = [
+            'judul' => '<i class="nav-icon fas fa-home"></i> Dashboard',
+            'menu' => 'dashboard',
+            'submenu' => '',
+            'page' => 'v_dashboard',
+        ];
+        return view('v_template_admin', $data);
+    }
     public function Setting()
     {
         $url = 'https://api.myquran.com/v2/sholat/kota/semua';
@@ -34,7 +44,6 @@ class Admin extends BaseController
 
         $data = [
             'judul' => '<i class="nav-icon fas fa-cog"></i> Setting',
-            'subjudul' => '',
             'menu' => 'setting',
             'submenu' => '',
             'page' => 'v_setting',
