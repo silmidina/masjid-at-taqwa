@@ -140,6 +140,31 @@
   </div>
   <!-- /.modal edit -->
 
+  <!-- modal-delete -->
+  <div class="modal fade" id="modal-delete<?= $value['id_kas_masjid'] ?>">
+    <div class="modal-dialog">
+      <div class="modal-content bg-success">
+        <div class="modal-header">
+          <h4 class="modal-title">Delete <?= $menu ?></h4>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
 
+          Apakah Anda Ingin Menghapus Data ? <br>
+          <b> <?= $value['ket'] ?></b>
+        </div>
+        <div class="modal-footer justify-content-between">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          <a href="<?= base_url('KasMasjid/DeleteKasMasuk/' . $value['id_kas_masjid']) ?>" class="btn btn-danger">Delete</a>
+        </div>
+
+      </div>
+      <!-- /.modal-content -->
+    </div>
+    <!-- /.modal-dialog -->
+  </div>
+  <!-- /.modal-edit -->
 
 <?php } ?>

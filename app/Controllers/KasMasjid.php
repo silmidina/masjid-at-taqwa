@@ -104,4 +104,24 @@ class KasMasjid extends BaseController
         session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Diupdate!! ');
         return redirect()->to(base_url('KasMasjid/KasKeluar'));
     }
+
+    public function DeleteKasMasuk($id_kas_masjid)
+    {
+        $data = [
+            'id_kas_masjid' => $id_kas_masjid,
+        ];
+        $this->ModelKasMasjid->DeleteKasMasuk($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Didelete!! ');
+        return redirect()->to(base_url('KasMasjid/KasMasuk'));
+    }
+
+    public function DeleteKasKeluar($id_kas_masjid)
+    {
+        $data = [
+            'id_kas_masjid' => $id_kas_masjid,
+        ];
+        $this->ModelKasMasjid->DeleteKasKeluar($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Didelete!! ');
+        return redirect()->to(base_url('KasMasjid/KasKeluar'));
+    }
 }
