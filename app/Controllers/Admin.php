@@ -4,14 +4,20 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ModelAdmin;
+use App\Models\ModelKasMasjid;
+use App\Models\ModelKasSosial;
 
 class Admin extends BaseController
 {
     protected $ModelAdmin;
+    protected $ModelKasMasjid;
+    protected $ModelKasSosial;
 
     public function __construct()
     {
         $this->ModelAdmin = new ModelAdmin();
+        $this->ModelKasMasjid = new ModelKasMasjid();
+        $this->ModelKasSosial = new ModelKasSosial();
     }
 
     public function index()
@@ -21,6 +27,8 @@ class Admin extends BaseController
             'menu' => 'dashboard',
             'submenu' => '',
             'page' => 'v_dashboard',
+            'kas' => $this->ModelKasMasjid->AllData(),
+            'kassosial' => $this->ModelKasSosial->AllData(),
         ];
         return view('v_template_admin', $data);
     }

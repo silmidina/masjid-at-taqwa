@@ -9,7 +9,6 @@
   }
   ?>
   <div class="alert alert-success alert-dismissible">
-
     <h5><i class="nav-icon fas fa-money-bill-wave"></i> Total Pemasukan Kas Masjid</h5>
     <h4>Rp. <?= number_format(array_sum($pemasukan), 0) ?></h4>
   </div>
@@ -40,7 +39,6 @@
             <th>Keterangan</th>
             <th>Jumlah</th>
             <th>Opsi</th>
-
           </tr>
         </thead>
         <tbody>
@@ -55,7 +53,6 @@
                 <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_masjid'] ?>"><i class="fas fa-pencil-alt"></i></button>
                 <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_masjid'] ?>"><i class="fas fa-trash"></i></button>
               </td>
-
             </tr>
           <?php } ?>
         </tbody>
@@ -151,7 +148,6 @@
           </button>
         </div>
         <div class="modal-body">
-
           Apakah Anda Ingin Menghapus Data ? <br>
           <b> <?= $value['ket'] ?></b>
         </div>
@@ -159,12 +155,10 @@
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
           <a href="<?= base_url('KasMasjid/DeleteKasMasuk/' . $value['id_kas_masjid']) ?>" class="btn btn-danger">Delete</a>
         </div>
-
       </div>
       <!-- /.modal-content -->
     </div>
     <!-- /.modal-dialog -->
   </div>
   <!-- /.modal-edit -->
-
 <?php } ?>

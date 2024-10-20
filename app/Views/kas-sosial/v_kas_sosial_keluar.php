@@ -1,16 +1,16 @@
 <div class="col-md-12">
   <?php
-  if ($kas == null) {
-    $pengeluaran[] = 0;
+  if ($kassosial == null) {
+    $pengeluaran_s[] = 0;
   } else {
-    foreach ($kas as $key => $value) {
-      $pengeluaran[] = $value['kas_keluar'];
+    foreach ($kassosial as $key => $value) {
+      $pengeluaran_s[] = $value['kas_keluar'];
     }
   }
   ?>
   <div class="alert alert-danger alert-dismissible">
-    <h5><i class="nav-icon fas fa-money-bill-wave"></i> Total Pengeluaran Kas Masjid</h5>
-    <h4>Rp. <?= number_format(array_sum($pengeluaran), 0) ?></h4>
+    <h5><i class="nav-icon fas fa-money-bill-wave"></i> Total Pengeluaran Kas Sosial</h5>
+    <h4>Rp. <?= number_format(array_sum($pengeluaran_s), 0) ?></h4>
   </div>
 </div>
 
@@ -43,15 +43,15 @@
         </thead>
         <tbody>
           <?php $no = 1;
-          foreach ($kas as $key => $value) { ?>
+          foreach ($kassosial as $key => $value) { ?>
             <tr>
               <td><?= $no++ ?></td>
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
               <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
               <td class="text-center">
-                <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_masjid'] ?>"><i class="fas fa-pencil-alt"></i></button>
-                <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_masjid'] ?>"><i class="fas fa-trash"></i></button>
+                <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_sosial'] ?>"><i class="fas fa-pencil-alt"></i></button>
+                <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_sosial'] ?>"><i class="fas fa-trash"></i></button>
               </td>
             </tr>
           <?php } ?>
@@ -72,7 +72,7 @@
         </button>
       </div>
       <div class="modal-body">
-        <?php echo form_open('KasMasjid/InsertKasKeluar') ?>
+        <?php echo form_open('KasSosial/InsertKasKeluar') ?>
         <div class="form-group">
           <label for="">Tanggal</label>
           <input type="date" name="tanggal" class="form-control" required>
@@ -98,9 +98,9 @@
 </div>
 <!-- /.modal tambah -->
 
-<?php foreach ($kas as $key => $value) { ?>
+<?php foreach ($kassosial as $key => $value) { ?>
   <!-- .modal edit -->
-  <div class="modal fade" id="modal-edit<?= $value['id_kas_masjid'] ?>">
+  <div class="modal fade" id="modal-edit<?= $value['id_kas_sosial'] ?>">
     <div class="modal-dialog">
       <div class="modal-content bg-danger">
         <div class="modal-header">
@@ -110,7 +110,7 @@
           </button>
         </div>
         <div class="modal-body">
-          <?php echo form_open('KasMasjid/UpdateKasKeluar/' . $value['id_kas_masjid']) ?>
+          <?php echo form_open('KasSosial/UpdateKasKeluar/' . $value['id_kas_sosial']) ?>
           <div class="form-group">
             <label for="">Tanggal</label>
             <input type="date" name="tanggal" value="<?= $value['tanggal'] ?>" class="form-control">
@@ -137,7 +137,7 @@
   <!-- /.modal edit -->
 
   <!-- modal-delete -->
-  <div class="modal fade" id="modal-delete<?= $value['id_kas_masjid'] ?>">
+  <div class="modal fade" id="modal-delete<?= $value['id_kas_sosial'] ?>">
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
@@ -152,7 +152,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <a href="<?= base_url('KasMasjid/DeleteKasKeluar/' . $value['id_kas_masjid']) ?>" class="btn btn-danger">Delete</a>
+          <a href="<?= base_url('KasSosial/DeleteKasKeluar/' . $value['id_kas_sosial']) ?>" class="btn btn-danger">Delete</a>
         </div>
       </div>
       <!-- /.modal-content -->

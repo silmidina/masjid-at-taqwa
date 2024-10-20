@@ -1,22 +1,22 @@
 <div class="col-md-12">
   <?php
-  if ($kas == null) {
-    $pemasukan[] = 0;
-    $pengeluaran[] = 0;
+  if ($kassosial == null) {
+    $pemasukan_s[] = 0;
+    $pengeluaran_s[] = 0;
   } else {
-    foreach ($kas as $key => $value) {
-      $pemasukan[] = $value['kas_masuk'];
-      $pengeluaran[] = $value['kas_keluar'];
+    foreach ($kassosial as $key => $value) {
+      $pemasukan_s[] = $value['kas_masuk'];
+      $pengeluaran_s[] = $value['kas_keluar'];
     }
   }
-  $saldokasmasjid = array_sum($pemasukan) - array_sum($pengeluaran);
+  $saldokassosial = array_sum($pemasukan_s) - array_sum($pengeluaran_s);
   ?>
   <div class="alert alert-primary alert-dismissible">
-    <h5><i class="nav-icon fas fa-money-bill-wave"></i> Saldo Kas Masjid</h5>
-    Pemasukan : Rp. <?= number_format(array_sum($pemasukan), 0) ?>
-    <br>Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran), 0) ?>
+    <h5><i class="nav-icon fas fa-money-bill-wave"></i> Saldo Kas Sosial</h5>
+    Pemasukan : Rp. <?= number_format(array_sum($pemasukan_s), 0) ?>
+    <br>Pengeluaran : Rp. <?= number_format(array_sum($pengeluaran_s), 0) ?>
     <hr>
-    <h4>Saldo Akhir : Rp. <?= number_format($saldokasmasjid, 0) ?></h4>
+    <h4>Saldo Akhir : Rp. <?= number_format($saldokassosial, 0) ?></h4>
   </div>
 </div>
 
@@ -44,7 +44,7 @@
         </thead>
         <tbody>
           <?php $no = 1;
-          foreach ($kas as $key => $value) { ?>
+          foreach ($kassosial as $key => $value) { ?>
             <tr class="<?= $value['status'] == 'Masuk' ? 'text-success' : 'text-danger' ?>">
               <td><?= $no++ ?></td>
               <td><?= $value['tanggal'] ?></td>

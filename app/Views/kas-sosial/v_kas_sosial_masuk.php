@@ -1,21 +1,21 @@
 <div class="col-md-12">
   <?php
-  if ($kas == null) {
-    $pengeluaran[] = 0;
+  if ($kassosial == null) {
+    $pemasukan_s[] = 0;
   } else {
-    foreach ($kas as $key => $value) {
-      $pengeluaran[] = $value['kas_keluar'];
+    foreach ($kassosial as $key => $value) {
+      $pemasukan_s[] = $value['kas_masuk'];
     }
   }
   ?>
-  <div class="alert alert-danger alert-dismissible">
-    <h5><i class="nav-icon fas fa-money-bill-wave"></i> Total Pengeluaran Kas Masjid</h5>
-    <h4>Rp. <?= number_format(array_sum($pengeluaran), 0) ?></h4>
+  <div class="alert alert-success alert-dismissible">
+    <h5><i class="nav-icon fas fa-money-bill-wave"></i> Total Pemasukan Kas Sosial</h5>
+    <h4>Rp. <?= number_format(array_sum($pemasukan_s), 0) ?></h4>
   </div>
 </div>
 
 <div class="col-md-12">
-  <div class="card card-danger">
+  <div class="card card-success">
     <div class="card-header">
       <h3 class="card-title">Data <?= $menu ?></h3>
       <div class="card-tools">
@@ -43,15 +43,15 @@
         </thead>
         <tbody>
           <?php $no = 1;
-          foreach ($kas as $key => $value) { ?>
+          foreach ($kassosial as $key => $value) { ?>
             <tr>
               <td><?= $no++ ?></td>
               <td><?= $value['tanggal'] ?></td>
               <td><?= $value['ket'] ?></td>
-              <td class="text-right">Rp. <?= number_format($value['kas_keluar'], 0) ?></td>
+              <td class="text-right">Rp. <?= number_format($value['kas_masuk'], 0) ?></td>
               <td class="text-center">
-                <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_masjid'] ?>"><i class="fas fa-pencil-alt"></i></button>
-                <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_masjid'] ?>"><i class="fas fa-trash"></i></button>
+                <button class="btn btn-flat btn-sm btn-warning" data-toggle="modal" data-target="#modal-edit<?= $value['id_kas_sosial'] ?>"><i class="fas fa-pencil-alt"></i></button>
+                <button class="btn btn-flat btn-sm btn-danger" data-toggle="modal" data-target="#modal-delete<?= $value['id_kas_sosial'] ?>"><i class="fas fa-trash"></i></button>
               </td>
             </tr>
           <?php } ?>
@@ -64,15 +64,15 @@
 <!-- .modal tambah -->
 <div class="modal fade" id="modal-tambah">
   <div class="modal-dialog">
-    <div class="modal-content bg-danger">
+    <div class="modal-content bg-success">
       <div class="modal-header">
-        <h4 class="modal-title"> Tambah Kas Keluar</h4>
+        <h4 class="modal-title">Tambah Kas Masuk</h4>
         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
           <span aria-hidden="true">&times;</span>
         </button>
       </div>
       <div class="modal-body">
-        <?php echo form_open('KasMasjid/InsertKasKeluar') ?>
+        <?php echo form_open('KasSosial/InsertKasMasuk') ?>
         <div class="form-group">
           <label for="">Tanggal</label>
           <input type="date" name="tanggal" class="form-control" required>
@@ -83,7 +83,7 @@
         </div>
         <div class="form-group">
           <label for="">Jumlah(Rp.)</label>
-          <input type="number" min="0" value="0" name="kas_keluar" class="form-control" required>
+          <input type="number" min="0" value="0" name="kas_masuk" class="form-control" required>
         </div>
       </div>
       <div class="modal-footer justify-content-between">
@@ -98,19 +98,20 @@
 </div>
 <!-- /.modal tambah -->
 
-<?php foreach ($kas as $key => $value) { ?>
+
+<?php foreach ($kassosial as $key => $value) { ?>
   <!-- .modal edit -->
-  <div class="modal fade" id="modal-edit<?= $value['id_kas_masjid'] ?>">
+  <div class="modal fade" id="modal-edit<?= $value['id_kas_sosial'] ?>">
     <div class="modal-dialog">
-      <div class="modal-content bg-danger">
+      <div class="modal-content bg-success">
         <div class="modal-header">
-          <h4 class="modal-title">Edit Kas Keluar</h4>
+          <h4 class="modal-title">Edit Kas Masuk</h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
         </div>
         <div class="modal-body">
-          <?php echo form_open('KasMasjid/UpdateKasKeluar/' . $value['id_kas_masjid']) ?>
+          <?php echo form_open('KasSosial/UpdateKasMasuk/' . $value['id_kas_sosial']) ?>
           <div class="form-group">
             <label for="">Tanggal</label>
             <input type="date" name="tanggal" value="<?= $value['tanggal'] ?>" class="form-control">
@@ -121,7 +122,7 @@
           </div>
           <div class="form-group">
             <label for="">Jumlah(Rp.)</label>
-            <input type="number" min="0" name="kas_keluar" value="<?= $value['kas_keluar'] ?>" class="form-control">
+            <input type="number" min="0" name="kas_masuk" value="<?= $value['kas_masuk'] ?>" class="form-control">
           </div>
         </div>
         <div class="modal-footer justify-content-between">
@@ -137,9 +138,9 @@
   <!-- /.modal edit -->
 
   <!-- modal-delete -->
-  <div class="modal fade" id="modal-delete<?= $value['id_kas_masjid'] ?>">
+  <div class="modal fade" id="modal-delete<?= $value['id_kas_sosial'] ?>">
     <div class="modal-dialog">
-      <div class="modal-content">
+      <div class="modal-content bg-success">
         <div class="modal-header">
           <h4 class="modal-title">Delete <?= $menu ?></h4>
           <button type="button" class="close" data-dismiss="modal" aria-label="Close">
@@ -152,7 +153,7 @@
         </div>
         <div class="modal-footer justify-content-between">
           <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-          <a href="<?= base_url('KasMasjid/DeleteKasKeluar/' . $value['id_kas_masjid']) ?>" class="btn btn-danger">Delete</a>
+          <a href="<?= base_url('KasSosial/DeleteKasMasuk/' . $value['id_kas_sosial']) ?>" class="btn btn-danger">Delete</a>
         </div>
       </div>
       <!-- /.modal-content -->
