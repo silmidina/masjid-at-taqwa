@@ -19,7 +19,7 @@ class Tahun extends BaseController
     public function index()
     {
         $data = [
-            'judul' => '<i class="nav-icon fas fa-handshake"></i> Tahun Qurban',
+            'judul' => '<i class="nav-icon far fa-calendar-check text-success"></i> Tahun Qurban',
             'menu' => 'qurban',
             'submenu' => 'tahun-qurban',
             'page' => 'qurban/v_tahun',

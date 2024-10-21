@@ -102,6 +102,8 @@ class Filters extends BaseFilters
                     'KasSosial/*',
                     'Tahun',
                     'Tahun/*',
+                    'PesertaQurban',
+                    'PesertaQurban/*',
                 ]
             ],
             // 'honeypot',

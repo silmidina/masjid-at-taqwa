@@ -12,6 +12,13 @@ class ModelTahun extends Model
             ->get()->getResultArray();
     }
 
+    public function DetailData($id_tahun)
+    {
+        return $this->db->table('tahun')
+            ->where('id_tahun', $id_tahun)
+            ->get()->getRowArray();
+    }
+
     public function InsertData($data)
     {
         $this->db->table('tahun')->insert($data);

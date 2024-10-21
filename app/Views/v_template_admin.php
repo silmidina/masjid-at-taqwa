@@ -227,14 +227,14 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </a>
               <ul class="nav nav-treeview">
                 <li class="nav-item">
-                  <a href="<?= base_url('Tahun') ?>" class="nav-link <?= $menu == 'qurban' ? 'active' : '' ?>">
-                    <i class="nav-icon far fa-circle nav-icon text-success"></i>
+                  <a href="<?= base_url('Tahun') ?>" class="nav-link <?= $submenu == 'tahun-qurban' ? 'active' : '' ?>">
+                    <i class="nav-icon fas fa-calendar-check nav-icon text-success"></i>
                     <p>Tahun Qurban</p>
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
-                    <i class="nav-icon far fa-circle nav-icon text-danger"></i>
+                  <a href="<?= base_url('PesertaQurban') ?>" class="nav-link <?= $submenu == 'peserta-qurban' ? 'active' : '' ?>">
+                    <i class="nav-icon fas fa-user nav-icon text-secondary"></i>
                     <p>Peserta Qurban</p>
                   </a>
                 </li>
