@@ -1,0 +1,272 @@
+INFO - 2024-10-22 02:55:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 02:55:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 02:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 02:55:21 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 02:55:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 02:55:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 02:55:36 --> TypeError: CodeIgniter\Database\BaseBuilder::hasOperator(): Argument #1 ($str) must be of type string, int given, called in C:\xampp\htdocs\At-Taqwa\system\Database\BaseBuilder.php on line 801
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3434.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(801): CodeIgniter\Database\BaseBuilder->hasOperator(1)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(717): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', '1', null, 'AND ', true)
+ 3 APPPATH\Views\qurban\v_kelompok_qurban.php(46): CodeIgniter\Database\BaseBuilder->where('1')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 7 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 8 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 9 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+11 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:01:42 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:01:42 --> TypeError: CodeIgniter\Database\BaseBuilder::hasOperator(): Argument #1 ($str) must be of type string, int given, called in C:\xampp\htdocs\At-Taqwa\system\Database\BaseBuilder.php on line 801
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in SYSTEMPATH\Database\BaseBuilder.php on line 3434.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(801): CodeIgniter\Database\BaseBuilder->hasOperator(1)
+ 2 SYSTEMPATH\Database\BaseBuilder.php(717): CodeIgniter\Database\BaseBuilder->whereHaving('QBWhere', '1', null, 'AND ', true)
+ 3 APPPATH\Views\qurban\v_kelompok_qurban.php(47): CodeIgniter\Database\BaseBuilder->where('1')
+ 4 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 5 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 6 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 7 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 8 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 9 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+10 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+11 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+12 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+13 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+14 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+15 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+16 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+17 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:04:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:04:04 --> ErrorException: Undefined array key "nama_anggota"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 56.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(56): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "nama_anggota"', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php', 56)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:04:26 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:04:27 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:04:27 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:05:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:05:04 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:07:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:07:11 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:12:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:12:52 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:12:52 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:14:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:14:30 --> TypeError: Unsupported operand types: int + array
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 52.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 4 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 8 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:14:50 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:14:51 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:14:51 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:15:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:15:18 --> TypeError: Unsupported operand types: int + array
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 52.
+ 1 SYSTEMPATH\View\View.php(234): include()
+ 2 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 3 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 4 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 5 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 6 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 7 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 8 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+ 9 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+10 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+11 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+12 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+13 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+14 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:20:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:20:05 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:20:05 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 03:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 03:23:39 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 03:23:40 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:10:11 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:10:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:10:15 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:10:19 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:10:20 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:10:21 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:14:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:14:16 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:16:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:16:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:16:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:16:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:16:38 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:16:38 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:16:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:16:56 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:16:57 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:16:57 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-22 05:17:37 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:20:15 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-22 05:20:16 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-22 05:20:16 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

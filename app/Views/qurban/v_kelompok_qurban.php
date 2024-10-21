@@ -2,7 +2,7 @@
  <div class="col-md-12">
    <div class="card card-info">
      <div class="card-header">
-       <h3 class="card-title">Data <?= $menu ?></h3>
+       <h3 class="card-title">Data <?= $judul ?></h3>
        <div class="card-tools">
          <button type="button" class="btn btn-tool" data-toggle="modal" data-target="#modal-tambah"><i class="fas fa-plus"></i> Tambah Kelompok
          </button>
@@ -41,12 +41,37 @@
                      <th>Nama Peserta</th>
                      <th>Biaya</th>
                    </tr>
-                   <tr>
+                   <?php
+                    $db = \Config\Database::connect();
+                    $anggota = $db->table('anggota_kelompok')
+                      ->where('id_kelompok', $value['id_kelompok'])
+                      ->get()->getResultArray();
+                    $no = 1;
+
+                    foreach ($anggota as $key => $anggota) {
+                      $biaya = $db->table('anggota_kelompok')
+                        ->where('id_kelompok', $anggota['id_kelompok'])
+                        ->select('anggota_kelompok.id_kelompok')
+                        ->groupBy('anggota_kelompok.id_kelompok')
+                        ->selectSum('anggota_kelompok.biaya')
+                        ->get()->getRowArray();
+
+
+                    ?>
+                     <tr>
+                       <td><?= $no++ ?></td>
+                       <td><?= $anggota['nama_peserta'] ?></td>
+                       <td>Rp. <?= number_format($anggota['biaya'], 0)
+                                ?></td>
+                     </tr>
+                   <?php } ?>
+                   <tr class="text-primary">
                      <td></td>
-                     <td></td>
-                     <td></td>
+                     <td><b>Total Biaya :</b></td>
+                     <td><b>Rp. <?= $anggota == null ? '0' : number_format($biaya['biaya'], 0) ?></b></td>
                    </tr>
                  </table>
+
                </div>
                <!-- /.card-body -->
                <div class="card-header">
