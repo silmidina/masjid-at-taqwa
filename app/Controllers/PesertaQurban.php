@@ -35,7 +35,7 @@ class PesertaQurban extends BaseController
     {
         $tahun = $this->ModelTahun->DetailData($id_tahun);
         $data = [
-            'judul' => '<i class="nav-icon fas fa-users text-secondary"></i> Peserta Qurban Tahun ' . $tahun['tahun_h'] . 'H/' . $tahun['tahun_m'] . 'M',
+            'judul' => 'Peserta Qurban Tahun ' . $tahun['tahun_h'] . 'H/' . $tahun['tahun_m'] . 'M',
             'menu' => 'qurban',
             'submenu' => 'peserta-qurban',
             'page' => 'qurban/v_kelompok_qurban',
@@ -43,5 +43,27 @@ class PesertaQurban extends BaseController
             'kelompok' => $this->ModelPesertaQurban->AllDataKelompok($id_tahun),
         ];
         return view('v_template_admin', $data);
+    }
+
+    public function DeleteKelompok($id_tahun, $id_kelompok)
+    {
+        $data = [
+            'id_kelompok' => $id_kelompok,
+        ];
+        $this->ModelPesertaQurban->DeleteKelompok($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Didelete!! ');
+        return redirect()->to(base_url('PesertaQurban/KelompokQurban/' . $id_tahun));
+    }
+
+    public function InsertKelompok()
+    {
+        $id_tahun = $this->request->getPost('id_tahun');
+        $data = [
+            'id_tahun' => $id_tahun,
+            'nama_kelompok' => $this->request->getPost('nama_kelompok'),
+        ];
+        $this->ModelPesertaQurban->InsertKelompok($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Ditambahkan!! ');
+        return redirect()->to(base_url('PesertaQurban/KelompokQurban/' . $id_tahun));
     }
 }

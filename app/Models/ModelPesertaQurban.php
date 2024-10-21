@@ -14,22 +14,16 @@ class ModelPesertaQurban extends Model
             ->get()->getResultArray();
     }
 
-    public function InsertData($data)
-    {
-        $this->db->table('kelompok')->insert($data);
-    }
 
-    public function UpdateData($data)
-    {
-        $this->db->table('kelompok')
-            ->where('id_kelompok', $data['id_kelompok'])
-            ->update($data);
-    }
-
-    public function DeleteData($data)
+    public function DeleteKelompok($data)
     {
         $this->db->table('kelompok')
             ->where('id_kelompok', $data['id_kelompok'])
             ->delete($data);
+    }
+
+    public function InsertKelompok($data)
+    {
+        $this->db->table('kelompok')->insert($data);
     }
 }
