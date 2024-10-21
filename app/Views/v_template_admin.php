@@ -111,7 +111,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <!-- Brand Logo -->
       <a href="<?= base_url('admin') ?>" class="brand-link d-flex flex-column justify-content-center align-items-center" style="border: none;">
         <img src="<?= base_url('assets/logo1.png') ?>" class="logo-brand elevation-5">
-
       </a>
 
 
@@ -133,12 +132,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 <p>Agenda</p>
               </a>
             </li>
-            <li class="nav-item">
-              <a href="#" class="nav-link">
-                <i class="nav-icon fas fa-clock"></i>
-                <p>Waktu Shalat</p>
-              </a>
-            </li>
+
             <hr class="divider-line">
             <li class="nav-item <?= $menu == 'kas-masjid' ? 'menu-open' : '' ?>">
               <a href="#" class="nav-link <?= $menu == 'kas-masjid' ? 'active' : '' ?>">
@@ -223,6 +217,29 @@ scratch. This page gets rid of all links and provides the needed markup only.
                 </li>
               </ul>
             </li>
+            <li class="nav-item <?= $menu == 'qurban' ? 'menu-open' : '' ?>">
+              <a href="#" class="nav-link <?= $menu == 'qurban' ? 'active' : '' ?>">
+                <i class="nav-icon fas fa-handshake"></i>
+                <p>
+                  Qurban
+                  <i class="right fas fa-angle-left"></i>
+                </p>
+              </a>
+              <ul class="nav nav-treeview">
+                <li class="nav-item">
+                  <a href="<?= base_url('Tahun') ?>" class="nav-link <?= $menu == 'qurban' ? 'active' : '' ?>">
+                    <i class="nav-icon far fa-circle nav-icon text-success"></i>
+                    <p>Tahun Qurban</p>
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="nav-link">
+                    <i class="nav-icon far fa-circle nav-icon text-danger"></i>
+                    <p>Peserta Qurban</p>
+                  </a>
+                </li>
+              </ul>
+            </li>
 
             <li class="nav-item">
               <a href="#" class="nav-link">
@@ -272,7 +289,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
             <div class="col-sm-6">
               <h1 class="m-0"><b><?= $judul ?></b></h1>
             </div><!-- /.col -->
-
           </div><!-- /.row -->
         </div><!-- /.container-fluid -->
       </div>
@@ -287,7 +303,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
               echo view($page);
             }
             ?>
-
           </div>
           <!-- /.row -->
         </div><!-- /.container-fluid -->
