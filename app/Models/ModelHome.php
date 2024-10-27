@@ -14,4 +14,12 @@ class ModelHome extends Model
             ->orderBy('tanggal', 'ASC')
             ->get()->getResultArray();
     }
+
+    public function AllDataKelompok()
+    {
+        return $this->db->table('kelompok')
+            ->join('tahun', 'tahun.id_tahun = kelompok.id_tahun', 'left')
+            ->where('tahun_m', date('Y'))
+            ->get()->getResultArray();
+    }
 }

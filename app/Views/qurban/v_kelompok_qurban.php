@@ -78,10 +78,7 @@
                  </table>
 
                </div>
-               <!-- /.card-body -->
-               <div class="card-header">
 
-               </div>
                <div class="card-footer">
                  <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#delete-kelompok<?= $value['id_kelompok'] ?>"><i class="fas fa-trash"></i> Delete Kelompok
                  </button>

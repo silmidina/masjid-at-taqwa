@@ -56,7 +56,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
               </ul>
             </li>
             <li class="nav-item">
-              <a href="#" class="nav-link">Peserta Qurban</a>
+              <a href="<?= base_url('Home/PesertaQurban') ?>" class="nav-link">Peserta Qurban</a>
             </li>
             <li class="nav-item dropdown">
               <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>

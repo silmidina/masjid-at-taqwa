@@ -46,4 +46,14 @@ class Home extends BaseController
         ];
         return view('v_template', $data);
     }
+
+    public function PesertaQurban()
+    {
+        $data = [
+            'judul' => 'Peserta Qurban',
+            'page' => 'front-end/v_peserta_qurban',
+            'kelompok' => $this->ModelHome->AllDataKelompok(),
+        ];
+        return view('v_template', $data);
+    }
 }
