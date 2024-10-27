@@ -1,0 +1,252 @@
+INFO - 2024-10-27 16:15:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 16:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 16:17:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 16:17:31 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 16:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 16:17:53 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 16:23:00 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:02 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:06 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:07 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:17 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:18 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:22:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:22:33 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:30:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:30:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:30:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:30:29 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:30:30 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:30:30 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:40:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:40:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:40:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:41:09 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:41:10 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:41:10 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:53:36 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:53:36 --> ErrorException: Undefined array key "id_tahun"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 68.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_tahun"', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:53:40 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:53:41 --> ErrorException: Undefined array key "id_tahun"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 68.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_tahun"', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:54:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:54:46 --> ErrorException: Undefined array key "id_tahun"
+[Method: GET, Route: PesertaQurban/KelompokQurban/1]
+in APPPATH\Views\qurban\v_kelompok_qurban.php on line 68.
+ 1 APPPATH\Views\qurban\v_kelompok_qurban.php(68): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "id_tahun"', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php', 68)
+ 2 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\qurban\\v_kelompok_qurban.php')
+ 3 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('qurban/v_kelompok_qurban', [], true)
+ 5 APPPATH\Views\v_template_admin.php(303): view('qurban/v_kelompok_qurban')
+ 6 SYSTEMPATH\View\View.php(234): include('C:\\xampp\\htdocs\\At-Taqwa\\app\\Views\\v_template_admin.php')
+ 7 SYSTEMPATH\View\View.php(237): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 8 SYSTEMPATH\Common.php(1171): CodeIgniter\View\View->render('v_template_admin', [], true)
+ 9 APPPATH\Controllers\PesertaQurban.php(45): view('v_template_admin', [...])
+10 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('1')
+11 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+12 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+13 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+14 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+15 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 20:55:33 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 20:55:34 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 20:55:34 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 21:15:46 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 21:15:49 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 21:15:49 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 21:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 21:16:35 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 21:16:35 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 21:17:04 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+ERROR - 2024-10-27 21:17:04 --> mysqli_sql_exception: Unknown column 'id_peserta' in 'where clause' in C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php:312
+Stack trace:
+#0 C:\xampp\htdocs\At-Taqwa\system\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `ke...', 0)
+#1 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `ke...')
+#2 C:\xampp\htdocs\At-Taqwa\system\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `ke...')
+#3 C:\xampp\htdocs\At-Taqwa\system\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `ke...', Array, false)
+#4 C:\xampp\htdocs\At-Taqwa\app\Models\ModelPesertaQurban.php(40): CodeIgniter\Database\BaseBuilder->delete(Array)
+#5 C:\xampp\htdocs\At-Taqwa\app\Controllers\PesertaQurban.php(89): App\Models\ModelPesertaQurban->DeletePeserta(Array)
+#6 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeletePeserta('1', '7')
+#7 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+#8 C:\xampp\htdocs\At-Taqwa\system\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(NULL, Object(Config\Cache), false)
+#9 C:\xampp\htdocs\At-Taqwa\system\Boot.php(325): CodeIgniter\CodeIgniter->run()
+#10 C:\xampp\htdocs\At-Taqwa\system\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+#11 C:\xampp\htdocs\At-Taqwa\public\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+#12 {main}
+CRITICAL - 2024-10-27 21:17:04 --> CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_peserta' in 'where clause'
+[Method: GET, Route: PesertaQurban/DeletePeserta/1/7]
+in SYSTEMPATH\Database\BaseConnection.php on line 688.
+ 1 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kelompok`
+WHERE `id_peserta` = :id_peserta:
+AND `id_peserta` = :id_peserta.1:', [...], false)
+ 2 APPPATH\Models\ModelPesertaQurban.php(40): CodeIgniter\Database\BaseBuilder->delete([...])
+ 3 APPPATH\Controllers\PesertaQurban.php(89): App\Models\ModelPesertaQurban->DeletePeserta([...])
+ 4 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeletePeserta('1', '7')
+ 5 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 6 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 9 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-27 21:17:04 --> [Caused by] CodeIgniter\Database\Exceptions\DatabaseException: Unknown column 'id_peserta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 317.
+ 1 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `kelompok`
+WHERE `id_peserta` = \'7\'
+AND `id_peserta` = \'7\'')
+ 2 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `kelompok`
+WHERE `id_peserta` = \'7\'
+AND `id_peserta` = \'7\'')
+ 3 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kelompok`
+WHERE `id_peserta` = :id_peserta:
+AND `id_peserta` = :id_peserta.1:', [...], false)
+ 4 APPPATH\Models\ModelPesertaQurban.php(40): CodeIgniter\Database\BaseBuilder->delete([...])
+ 5 APPPATH\Controllers\PesertaQurban.php(89): App\Models\ModelPesertaQurban->DeletePeserta([...])
+ 6 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeletePeserta('1', '7')
+ 7 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 8 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+11 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+CRITICAL - 2024-10-27 21:17:04 --> [Caused by] mysqli_sql_exception: Unknown column 'id_peserta' in 'where clause'
+in SYSTEMPATH\Database\MySQLi\Connection.php on line 312.
+ 1 SYSTEMPATH\Database\MySQLi\Connection.php(312): mysqli->query('DELETE FROM `kelompok`
+WHERE `id_peserta` = \'7\'
+AND `id_peserta` = \'7\'', 0)
+ 2 SYSTEMPATH\Database\BaseConnection.php(734): CodeIgniter\Database\MySQLi\Connection->execute('DELETE FROM `kelompok`
+WHERE `id_peserta` = \'7\'
+AND `id_peserta` = \'7\'')
+ 3 SYSTEMPATH\Database\BaseConnection.php(648): CodeIgniter\Database\BaseConnection->simpleQuery('DELETE FROM `kelompok`
+WHERE `id_peserta` = \'7\'
+AND `id_peserta` = \'7\'')
+ 4 SYSTEMPATH\Database\BaseBuilder.php(2843): CodeIgniter\Database\BaseConnection->query('DELETE FROM `kelompok`
+WHERE `id_peserta` = :id_peserta:
+AND `id_peserta` = :id_peserta.1:', [...], false)
+ 5 APPPATH\Models\ModelPesertaQurban.php(40): CodeIgniter\Database\BaseBuilder->delete([...])
+ 6 APPPATH\Controllers\PesertaQurban.php(89): App\Models\ModelPesertaQurban->DeletePeserta([...])
+ 7 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->DeletePeserta('1', '7')
+ 8 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 9 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+10 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+11 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+12 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))
+INFO - 2024-10-27 21:20:24 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 21:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+INFO - 2024-10-27 21:20:25 --> Session: Class initialized using 'CodeIgniter\Session\Handlers\FileHandler' driver.
+CRITICAL - 2024-10-27 21:20:25 --> ErrorException: Trying to access array offset on value of type null
+[Method: GET, Route: PesertaQurban/KelompokQurban/dist/img/user2-160x160.jpg]
+in APPPATH\Controllers\PesertaQurban.php on line 38.
+ 1 APPPATH\Controllers\PesertaQurban.php(38): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Trying to access array offset on value of type null', 'C:\\xampp\\htdocs\\At-Taqwa\\app\\Controllers\\PesertaQurban.php', 38)
+ 2 SYSTEMPATH\CodeIgniter.php(933): App\Controllers\PesertaQurban->KelompokQurban('dist', 'img', 'user2-160x160.jpg')
+ 3 SYSTEMPATH\CodeIgniter.php(509): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\PesertaQurban))
+ 4 SYSTEMPATH\CodeIgniter.php(355): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 5 SYSTEMPATH\Boot.php(325): CodeIgniter\CodeIgniter->run()
+ 6 SYSTEMPATH\Boot.php(67): CodeIgniter\Boot::runCodeIgniter(Object(CodeIgniter\CodeIgniter))
+ 7 FCPATH\index.php(56): CodeIgniter\Boot::bootWeb(Object(Config\Paths))

@@ -66,4 +66,28 @@ class PesertaQurban extends BaseController
         session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Ditambahkan!! ');
         return redirect()->to(base_url('PesertaQurban/KelompokQurban/' . $id_tahun));
     }
+
+    public function InsertPeserta()
+    {
+        $id_tahun = $this->request->getPost('id_tahun');
+        $id_kelompok = $this->request->getPost('id_kelompok');
+        $data = [
+            'id_kelompok' => $id_kelompok,
+            'nama_peserta' => $this->request->getPost('nama_peserta'),
+            'biaya' => $this->request->getPost('biaya'),
+        ];
+        $this->ModelPesertaQurban->InsertPeserta($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Ditambahkan!! ');
+        return redirect()->to(base_url('PesertaQurban/KelompokQurban/' . $id_tahun));
+    }
+
+    public function DeletePeserta($id_tahun, $id_peserta)
+    {
+        $data = [
+            'id_peserta' => $id_peserta,
+        ];
+        $this->ModelPesertaQurban->DeletePeserta($data);
+        session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Didelete!! ');
+        return redirect()->to(base_url('PesertaQurban/KelompokQurban/' . $id_tahun));
+    }
 }

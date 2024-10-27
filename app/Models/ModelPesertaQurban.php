@@ -26,4 +26,17 @@ class ModelPesertaQurban extends Model
     {
         $this->db->table('kelompok')->insert($data);
     }
+
+    public function InsertPeserta($data)
+    {
+        $this->db->table('peserta_kelompok')->insert($data);
+    }
+
+
+    public function DeletePeserta($data)
+    {
+        $this->db->table('peserta_kelompok')
+            ->where('id_peserta', $data['id_peserta'])
+            ->delete($data);
+    }
 }
