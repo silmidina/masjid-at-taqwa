@@ -88,7 +88,44 @@ class Home extends BaseController
             'judul' => 'Donasi',
             'page' => 'front-end/v_donasi',
             'rek' => $this->ModelRekening->AllData(),
+            'validation' => \Config\Services::validation(),
         ];
         return view('v_template', $data);
+    }
+
+    public function KirimDonasi()
+    {
+
+        if ($this->validate([
+            'bukti' => [
+                'label' => 'Bukti Transfer',
+                'rules' => 'uploaded[bukti]|max_size[bukti,1500]|mime_in[bukti,image/png,image/jpg,image/jpeg,]',
+                'errors' => [
+                    'uploaded' => '{field} Belum Di Pilih!!',
+                    'max_size' => '{field} Max 1500 KB !',
+                    'mime_in' => 'Format {field} Wajib JPG, PNG JPEG',
+                ],
+            ],
+        ])) {
+            $bukti = $this->request->getFile('bukti');
+            $nama_file = $bukti->getRandomName();
+            $data = [
+                'id_rekening' => $this->request->getPost('id_rekening'),
+                'nama_bank' => $this->request->getPost('nama_bank'),
+                'no_rek' => $this->request->getPost('no_rek'),
+                'nama_pengirim' => $this->request->getPost('nama_pengirim'),
+                'jumlah' => $this->request->getPost('jumlah'),
+                'jenis_donasi' => $this->request->getPost('jenis_donasi'),
+                'bukti' => $nama_file,
+                'tgl' => date('Y-m-d'),
+            ];
+            $bukti->move('bukti', $nama_file);
+            $this->ModelHome->InsertDonasi($data);
+            session()->setFlashdata('pesan', 'Terima Kasih<i class="far fa-smile"></i> Bukti Transaksi Sudah Dikirim!!');
+            return redirect()->to(base_url('Home/Donasi'));
+        } else {
+            session()->setFlashdata('errors', \Config\Services::validation()->getErrors());
+            return redirect()->to(base_url('Home/Donasi'))->withInput('validation', \Config\Services::validation());
+        }
     }
 }

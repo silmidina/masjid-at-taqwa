@@ -34,6 +34,7 @@ class Admin extends BaseController
         ];
         return view('v_template_admin', $data);
     }
+
     public function Setting()
     {
         $url = 'https://api.myquran.com/v2/sholat/kota/semua';
@@ -75,5 +76,17 @@ class Admin extends BaseController
         $this->ModelAdmin->UpdateSetting($data);
         session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Setting Berhasil Diupdate!! ');
         return redirect()->to(base_url('Admin/Setting'));
+    }
+
+    public function DonasiMasuk()
+    {
+        $data = [
+            'judul' => '<i class="nav-icon fas fa-hand-holding-usd"></i> Donasi Masuk',
+            'menu' => 'donasi',
+            'submenu' => '',
+            'page' => 'v_donasi_masuk',
+            'donasi' => $this->ModelAdmin->AllDonasi(),
+        ];
+        return view('v_template_admin', $data);
     }
 }

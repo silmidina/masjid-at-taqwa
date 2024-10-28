@@ -35,4 +35,21 @@ class ModelAdmin extends Model
             ->where('year(tanggal)', date('Y'))
             ->get()->getResultArray();
     }
+
+    public function AllDonasi()
+    {
+        return $this->db->table('donasi')
+            ->join('rekening', 'rekening.id_rekening = donasi.id_rekening', 'left')
+            ->select('donasi.no_rek as no_rek_pengirim')
+            ->select('donasi.nama_bank as nama_bank_pengirim')
+            ->select('donasi.nama_pengirim')
+            ->select('donasi.jumlah')
+            ->select('donasi.bukti')
+            ->select('donasi.tgl')
+            ->select('donasi.jenis_donasi')
+            ->select('rekening.no_rek as no_rek_tujuan')
+            ->select('rekening.nama_bank as nama_bank_tujuan')
+            ->orderBy('id_donasi', 'DESC')
+            ->get()->getResultArray();
+    }
 }

@@ -38,4 +38,9 @@ class ModelHome extends Model
             ->where('year(tanggal)', date('Y'))
             ->get()->getResultArray();
     }
+
+    public function InsertDonasi($data)
+    {
+        $this->db->table('donasi')->insert($data);
+    }
 }

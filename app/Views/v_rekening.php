@@ -80,8 +80,6 @@
            <label>Atas Nama</label>
            <input type="text" name="atas_nama" class="form-control" required>
          </div>
-
-
        </div>
        <div class="modal-footer justify-content-between">
          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>

@@ -56,7 +56,7 @@
            <?= session()->getFlashdata('pesan') ?>
          </div>
        <?php endif; ?>
-       <?php echo form_open('Home/Kirim') ?>
+       <?php echo form_open_multipart('Home/KirimDonasi') ?>
        <div class="row">
          <div class="col-6">
            <div class="form-group">
@@ -72,7 +72,7 @@
          <div class="col-6">
            <div class="form-group">
              <label>Jenis Donasi Untuk : </label>
-             <select name="id_rekening" class="form-control">
+             <select name="jenis_donasi" class="form-control">
                <option value="">-Pilih Jenis Donasi-</option>
                <option value="Masjid">Masjid</option>
                <option value="Sosial">Sosial</option>
@@ -98,7 +98,7 @@
        </div>
        <div class="form-group">
          <label>Bukti Transfer</label>
-         <input type="file" name="jumlah" class="form-control" required>
+         <input type="file" name="bukti" class="form-control" accept="image/*" required>
        </div>
      </div>
      <div class="modal-footer justify-content-between">
