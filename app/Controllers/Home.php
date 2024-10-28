@@ -49,10 +49,32 @@ class Home extends BaseController
 
     public function PesertaQurban()
     {
+        $y = date('Y');
+        $m = $y - 579;
         $data = [
-            'judul' => 'Peserta Qurban',
+            'judul' => 'Peserta Qurban Tahun ' . $m . 'H / ' . date('Y') . 'M',
             'page' => 'front-end/v_peserta_qurban',
             'kelompok' => $this->ModelHome->AllDataKelompok(),
+        ];
+        return view('v_template', $data);
+    }
+
+    public function RekapKasMasjid()
+    {
+        $data = [
+            'judul' => 'Rekap Kas Masjid',
+            'page' => 'front-end/v_rekap_kas_masjid',
+            'kas' => $this->ModelHome->AllDataKasMasjid(),
+        ];
+        return view('v_template', $data);
+    }
+
+    public function RekapKasSosial()
+    {
+        $data = [
+            'judul' => 'Rekap Kas Sosial',
+            'page' => 'front-end/v_rekap_kas_sosial',
+            'kas' => $this->ModelHome->AllDataKasSosial(),
         ];
         return view('v_template', $data);
     }

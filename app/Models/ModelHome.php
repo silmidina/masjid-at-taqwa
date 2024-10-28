@@ -22,4 +22,20 @@ class ModelHome extends Model
             ->where('tahun_m', date('Y'))
             ->get()->getResultArray();
     }
+
+    public function AllDataKasMasjid()
+    {
+        return $this->db->table('kas_masjid')
+            ->where('month(tanggal)', date('m'))
+            ->where('year(tanggal)', date('Y'))
+            ->get()->getResultArray();
+    }
+
+    public function AllDataKasSosial()
+    {
+        return $this->db->table('kas_sosial')
+            ->where('month(tanggal)', date('m'))
+            ->where('year(tanggal)', date('Y'))
+            ->get()->getResultArray();
+    }
 }

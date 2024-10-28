@@ -19,4 +19,20 @@ class ModelAdmin extends Model
             ->where('id_setting', 1)
             ->update($data);
     }
+
+    public function AllDataKasMasjid()
+    {
+        return $this->db->table('kas_masjid')
+            ->where('month(tanggal)', date('m'))
+            ->where('year(tanggal)', date('Y'))
+            ->get()->getResultArray();
+    }
+
+    public function AllDataKasSosial()
+    {
+        return $this->db->table('kas_sosial')
+            ->where('month(tanggal)', date('m'))
+            ->where('year(tanggal)', date('Y'))
+            ->get()->getResultArray();
+    }
 }
