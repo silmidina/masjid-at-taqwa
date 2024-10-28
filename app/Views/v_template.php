@@ -19,6 +19,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
 </head>
 
 <body class="hold-transition layout-top-nav">
+  <?php
+  $db = \Config\Database::connect();
+  $web = $db->table('setting')->get()->getRowArray();
+  ?>
   <div class="wrapper">
 
     <!-- Navbar -->
@@ -26,7 +30,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
       <div class="container">
         <a href="<?= base_url() ?>" class="navbar-brand">
           <img src="<?= base_url('assets/logo1.png') ?>" class="brand-image elevation-3" style="opacity: .8; width: 70px; height: auto;">
-          <b> MASJID AT-TAQWA</b>
+          <b><?= $web['nama_masjid'] ?></b>
         </a>
 
 
@@ -43,10 +47,10 @@ scratch. This page gets rid of all links and provides the needed markup only.
               <a href="<?= base_url('Home') ?>" class="nav-link">Home</a>
             </li>
             <li class="nav-item">
-              <a href="<?= base_url('Home/Agenda') ?>" class="nav-link">Agenda</a>
+              <a href="index3.html" class="nav-link">About</a>
             </li>
             <li class="nav-item">
-              <a href="index3.html" class="nav-link">About</a>
+              <a href="<?= base_url('Home/Agenda') ?>" class="nav-link">Agenda</a>
             </li>
             <li class="nav-item dropdown">
               <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Kas</a>
@@ -57,13 +61,6 @@ scratch. This page gets rid of all links and provides the needed markup only.
             </li>
             <li class="nav-item">
               <a href="<?= base_url('Home/PesertaQurban') ?>" class="nav-link">Peserta Qurban</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a id="dropdownSubMenu1" href="#" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false" class="nav-link dropdown-toggle">Dropdown</a>
-              <ul aria-labelledby="dropdownSubMenu1" class="dropdown-menu border-0 shadow">
-                <li><a href="#" class="dropdown-item">Some action </a></li>
-                <li><a href="#" class="dropdown-item">Some other action</a></li>
-              </ul>
             </li>
           </ul>
 
@@ -124,7 +121,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
         Anything you want
       </div>
       <!-- Default to the left -->
-      <strong>Copyright &copy; <?= date('Y') ?> <a href="https://adminlte.io">MASJID AT-TAQWA</a>.</strong> All rights reserved.
+      <strong>Copyright &copy; <?= date('Y') ?> <a href="https://adminlte.io"><?= $web['nama_masjid'] ?></a>.</strong> <?= $web['alamat'] ?>.
     </footer>
   </div>
   <!-- ./wrapper -->
