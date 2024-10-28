@@ -32,7 +32,7 @@
              <tr>
                <td><?= $no++ ?></td>
                <td>
-                 <i class="fas fa--money-check fa-3x text-success"></i>
+                 <i class="fas fa-money-check fa-3x text-success"></i>
                </td>
                <td>
                  <h4><b><?= $value['nama_bank'] ?></b></h4>

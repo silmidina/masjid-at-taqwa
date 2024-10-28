@@ -70,7 +70,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
 
 
           <li class="nav-item">
-            <a class="btn btn-warning">
+            <a href="<?= base_url('Home/Donasi') ?>" class="btn btn-warning">
               <i class="fas fa-hand-holding-usd"> Donasi</i>
             </a>
           </li>

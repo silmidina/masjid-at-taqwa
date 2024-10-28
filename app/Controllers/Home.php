@@ -6,6 +6,7 @@ use App\Models\ModelHome;
 use App\Models\ModelAdmin;
 use App\Models\ModelKasMasjid;
 use App\Models\ModelKasSosial;
+use App\Models\ModelRekening;
 
 class Home extends BaseController
 {
@@ -13,6 +14,7 @@ class Home extends BaseController
     protected $ModelAdmin;
     protected $ModelKasMasjid;
     protected $ModelKasSosial;
+    protected $ModelRekening;
 
     public function __construct()
     {
@@ -20,6 +22,7 @@ class Home extends BaseController
         $this->ModelAdmin = new ModelAdmin();
         $this->ModelKasMasjid = new ModelKasMasjid();
         $this->ModelKasSosial = new ModelKasSosial();
+        $this->ModelRekening = new ModelRekening();
     }
 
     public function index()
@@ -75,6 +78,16 @@ class Home extends BaseController
             'judul' => 'Rekap Kas Sosial',
             'page' => 'front-end/v_rekap_kas_sosial',
             'kas' => $this->ModelHome->AllDataKasSosial(),
+        ];
+        return view('v_template', $data);
+    }
+
+    public function Donasi()
+    {
+        $data = [
+            'judul' => 'Donasi',
+            'page' => 'front-end/v_donasi',
+            'rek' => $this->ModelRekening->AllData(),
         ];
         return view('v_template', $data);
     }
