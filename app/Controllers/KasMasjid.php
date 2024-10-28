@@ -4,15 +4,18 @@ namespace App\Controllers;
 
 use App\Controllers\BaseController;
 use App\Models\ModelKasMasjid;
+use App\Models\ModelAdmin;
 use CodeIgniter\HTTP\ResponseInterface;
 
 class KasMasjid extends BaseController
 {
     protected $ModelKasMasjid;
+    protected $ModelAdmin;
 
     public function __construct()
     {
         $this->ModelKasMasjid = new ModelKasMasjid();
+        $this->ModelAdmin = new ModelAdmin();
     }
 
     public function index()
@@ -123,5 +126,18 @@ class KasMasjid extends BaseController
         $this->ModelKasMasjid->DeleteKasKeluar($data);
         session()->setFlashdata('pesan', '<i class="fas fa-check"></i> Data Berhasil Didelete!! ');
         return redirect()->to(base_url('KasMasjid/KasKeluar'));
+    }
+
+    public function Laporan()
+    {
+        $data = [
+            'judul' => '<i class="nav-icon fas fa-file-alt nav-icon text-warning"></i> Laporan Kas Masjid',
+            'menu' => 'laporan-kas-masjid',
+            'submenu' => 'laporan-kas-masjid',
+            'page' => 'kas-masjid/v_laporan_kas_masjid',
+            'masjid' => $this->ModelAdmin->ViewSetting(),
+            //'kas_m' => $this->ModelKasMasjid->AllData(),
+        ];
+        return view('v_template_admin', $data);
     }
 }
