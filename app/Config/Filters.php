@@ -104,6 +104,8 @@ class Filters extends BaseFilters
                     'Tahun/*',
                     'PesertaQurban',
                     'PesertaQurban/*',
+                    'Rekening',
+                    'Rekening/*',
                 ]
             ],
             // 'honeypot',
