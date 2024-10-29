@@ -140,4 +140,20 @@ class KasMasjid extends BaseController
         ];
         return view('v_template_admin', $data);
     }
+
+    public function ViewLaporan()
+    {
+        //$this->request->getPost('bulan');
+        $bulan =  $this->request->getPost('bulan');
+        $tahun =  $this->request->getPost('tahun');
+        $data = [
+            'kas' => $this->ModelKasMasjid->AllDataBulanan($bulan, $tahun),
+            'bulan' => $bulan,
+            'tahun' => $tahun,
+        ];
+        $response = [
+            'data' => view('kas-masjid/v_data_laporan', $data),
+        ];
+        echo json_encode($response);
+    }
 }

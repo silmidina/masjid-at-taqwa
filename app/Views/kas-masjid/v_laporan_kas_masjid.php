@@ -61,12 +61,18 @@
          </div>
        </div>
        <div class="col-sm-12" id="printarea">
-         <p>
-         <h3><b><?= $masjid['nama_masjid'] ?></b></h3>
-         <p><?= $masjid['alamat'] ?><br>
-           <b>Laporan Kas Masjid</b>
-         </p>
+         <div class="text-center">
+           <p class="text-center">
+           <h3><b><?= $masjid['nama_masjid'] ?></b></h3>
+           <p><?= $masjid['alamat'] ?><br>
+             <b>Laporan Kas Masjid</b>
+           </p>
+         </div>
+         <div class="Tabel">
+
+         </div>
        </div>
+
      </div>
      <!-- /.card-body -->
    </div>
@@ -82,7 +88,20 @@
      } else if (tahun == '') {
        alert('Tahun Belum Dipilih!');
      } else {
-
+       $.ajax({
+         type: "POST",
+         url: "<?= base_url('KasMasjid/ViewLaporan') ?>",
+         data: {
+           bulan: bulan,
+           tahun: tahun,
+         },
+         dataType: "JSON",
+         success: function(response) {
+           if (response.data) {
+             $('.Tabel').html(response.data);
+           }
+         }
+       })
      }
    }
 
