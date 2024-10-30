@@ -209,7 +209,7 @@ scratch. This page gets rid of all links and provides the needed markup only.
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="nav-link">
+                  <a href="<?= base_url('KasSosial/Laporan') ?>" class="nav-link <?= $submenu == 'laporan-kas-sosial' ? 'active' : '' ?>">
                     <i class="nav-icon fas fa-file-alt nav-icon text-warning"></i>
                     <p>Laporan Kas Sosial</p>
                   </a>
