@@ -132,7 +132,7 @@ class KasMasjid extends BaseController
     {
         $data = [
             'judul' => '<i class="nav-icon fas fa-file-alt nav-icon text-warning"></i> Laporan Kas Masjid',
-            'menu' => 'laporan-kas-masjid',
+            'menu' => 'laporan-kas',
             'submenu' => 'laporan-kas-masjid',
             'page' => 'kas-masjid/v_laporan_kas_masjid',
             'masjid' => $this->ModelAdmin->ViewSetting(),

@@ -102,7 +102,7 @@
        </div>
      </div>
      <div class="modal-footer justify-content-between">
-       <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+
        <button type="submit" class="btn btn-info"><i class="fas fa-paper-plane"></i> Kirim</button>
      </div>
      <?php echo form_close() ?>
